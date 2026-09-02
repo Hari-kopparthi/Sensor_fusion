@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# calibration output -- specific to one physical unit, not portable
+accel_calibration.json
+lis2mdl_calibration.json
+
+# recorded runs are large; only the reference walk is committed
+logs/
+*_imu.csv
+!data/*_imu.csv
+
+# analysis output
+*.png
+!docs/images/*.png
